@@ -1,0 +1,31 @@
+name: 🚀 Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # როცა ცვლილება მოხდება main branch-ზე
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: 🧱 Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
