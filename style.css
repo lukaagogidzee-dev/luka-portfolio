@@ -23,6 +23,32 @@ header {
   z-index: 100;
 }
 
+/* --- LANGUAGE SWITCHER --- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switcher img {
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #334155;
+}
+
+.lang-switcher img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.lang-switcher img.active {
+  box-shadow: 0 0 8px #facc15;
+}
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -134,6 +160,52 @@ p {
   font-size: 1em;
   line-height: 1.7;
 }
+/* --- SKILLS --- */
+#skills {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2em;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.skill-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 25px 15px;
+  width: 130px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+  background: #334155;
+  transform: translateY(-8px);
+}
+
+.skill-card img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #f8fafc;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
 
 /* --- PROJECTS --- */
 .project-grid {
@@ -155,6 +227,8 @@ p {
   transform: translateY(-8px);
   background: #334155;
 }
+
+
 
 /* --- CONTACT --- */
 #contact form {
