@@ -204,3 +204,16 @@ function changeLanguage(lang) {
 
   document.querySelector("footer p").textContent = t.footer;
 }
+
+// Floating Contact Card Logic
+const floatBtn = document.getElementById('floating-contact-btn');
+const floatCard = document.getElementById('floating-contact-card');
+const closeFloatCard = document.getElementById('close-contact-card');
+
+floatBtn.addEventListener('click', () => {
+  floatCard.style.display = 'block';
+});
+
+closeFloatCard.addEventListener('click', () => {
+  floatCard.style.display = 'none';
+});
