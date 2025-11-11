@@ -333,9 +333,8 @@ p {
   transition: 0.3s;
 }
 
-#contact button:hover {
-  background: #fde047;
-  transform: scale(1.05);
+.location{
+  color: #005ecc;
 }
 
 /* --- FOOTER --- */
@@ -407,5 +406,4 @@ footer {
     transform: scale(1);
   }
 } 
-
 
