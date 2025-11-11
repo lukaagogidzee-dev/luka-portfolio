@@ -281,13 +281,17 @@ p {
 
 /* --- PROJECTS --- */
 .project-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 25px;
+  gap: 50px;
   margin-top: 40px;
+  justify-content: center;
+  
 }
 
 .project-card {
+  flex: 1 1 calc(33.333% - 50px);
   background: #1e293b;
   border-radius: 10px;
   padding: 25px;
