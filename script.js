@@ -63,16 +63,40 @@ const translations = {
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
       {
+        title: "Portfolio Website (Responsive Design)",
+        text: "👉 სრულად რეზპონსიული ვებსაიტი შენს შესახებ. აწყობილია HTML, CSS, JS-ზე 🌙 დამატებულია dark/light რეჟიმი.🖌️ UI/UX დიზაინი სრულად შენ მიერ შექმნილი."
+      },
+      {
+        title: "Task Manager App (Vanilla JS + LocalStorage)",
+        text: "✅ ამოცანების მენეჯმენტი, შენახვა და რედაქტირება.💾 მონაცემები ინახება ბრაუზერის მეხსიერებაში."
+      },
+      {
+        title: "Weather Dashboard (API Integration)",
+        text: "☀️ აჩვენებს ამინდის პროგნოზს OpenWeather API-დან.📍 მოიცავს ქალაქის ძებნის ფუნქციას და ავტომატურ ლოკაციას."
+      },
+      {
+        title: "Logo Design Collection",
+        text: "🎨 შექმნილი ბრენდული ლოგოების გალერეა (Figma / Illustrator).💼 სხვადასხვა სტილი — მინიმალისტური, 3D, მოდერნი."
+      },
+      {
+        title: "UI/UX Design System",
+        text: "📱 დიზაინის სისტემის პროტოტიპი (Figma-ში შექმნილი).💡 მოიცავს კომპონენტებს, ფერთა პალიტრას და ტიპოგრაფიას."
+      },
+      {
+        title: "Full-Stack Platform",
+        text: "⚙️ Node.js + Express.js + MongoDB აპლიკაცია.🧾 ავტორიზაცია, CRUD ფუნქციები, კომენტარები"
+      },
+      {
         title: "Task Manager App",
         text: "მარტივი, მაგრამ ეფექტური აპლიკაცია სამუშაოების სამართავად. აშენებულია Vanilla JS და LocalStorage-ზე."
       },
       {
-        title: "Weather Dashboard",
-        text: "დინამიური ამინდის აპი OpenWeather API-ის გამოყენებით 🌤️"
+        title: "E-Commerce Storefront",
+        text: "🛒 პროდუქციის კატალოგი, კალათა და შეკვეთის სისტემა.💳 ინტერაქტიული Checkout UI და რეალური API ინტეგრაცია."
       },
       {
-        title: "Responsive Portfolio",
-        text: "მიმზიდველი პორტფოლიო, რომელიც აჩვენებს შენს უნარებსა და პროექტებს 💼"
+        title: "Landing Page",
+        text: "🚀 მოდერნული ლენდინგი ანიმაციებითა და call-to-action ელემენტებით.🎯 SEO-ოპტიმიზაცია და სწრაფი ჩატვირთვა."
       }
     ],
     contactTitle: "დამიკავშირდი",
@@ -98,16 +122,36 @@ const translations = {
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
       {
-        title: "Task Manager App",
-        text: "A simple but effective app to manage tasks. Built using Vanilla JS and LocalStorage."
+        title: "Portfolio Website (Responsive Design)",
+        text: "👉 Fully responsive personal website built with HTML, CSS, and JS.🌙 Includes dark/light mode.🖌️ UI/UX design fully created by you."
       },
       {
-        title: "Weather Dashboard",
-        text: "Dynamic weather dashboard powered by OpenWeather API 🌤️"
+        title: "Task Manager App (Vanilla JS + LocalStorage)",
+        text: "✅ Manage, save, and edit your daily tasks.💾 Data is stored locally in the browser."
       },
       {
-        title: "Responsive Portfolio",
-        text: "A modern responsive portfolio showcasing skills and projects 💼"
+        title: "Weather Dashboard (API Integration)",
+        text: "☀️ Displays live weather data from OpenWeather API.📍 Includes city search and automatic location detection."
+      },
+      {
+        title: "Logo Design Collection",
+        text: "🎨 Gallery of original logo designs (Figma / Illustrator).💼 Various styles — minimalist, 3D, and modern."
+      },
+      {
+        title: "UI/UX Design System",
+        text: "📱 Prototype of a design system created in Figma.💡 Includes components, color palette, and typography setup."
+      },
+      {
+        title: "Full-Stack Platform",
+        text: "⚙️ Built with Node.js, Express.js, and MongoDB.🧾 Features authentication, CRUD operations, and comments."
+      },
+      {
+        title: "E-Commerce Storefront",
+        text: "🛒 Product catalog, shopping cart, and order system.💳 Interactive checkout UI with real API integration."
+      },
+      {
+        title: "Landing Page",
+        text: "🚀 Modern landing page with animations and call-to-action elements.🎯 SEO optimized and lightning-fast loading speed."
       }
     ],
     contactTitle: "Get in Touch",
@@ -132,17 +176,37 @@ const translations = {
       "Я веб-разработчик, специализирующийся на Front-end, но также активно изучаю Back-end. Умею верстать дизайн и писать функциональный код. Работаю с HTML, CSS, JavaScript и скоро с Node.js & Express.",
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
-      {
-        title: "Task Manager App",
-        text: "Простое, но эффективное приложение для управления задачами. Построено на Vanilla JS и LocalStorage."
+     {
+        title: "Portfolio Website (Responsive Design)",
+        text: "👉 Полностью адаптивный персональный сайт, созданный с использованием HTML, CSS и JS.🌙 Включает тёмный и светлый режимы.🖌️ UI/UX дизайн полностью выполнен вами."
       },
       {
-        title: "Weather Dashboard",
-        text: "Динамическое погодное приложение с использованием OpenWeather API 🌤️"
+        title: "Task Manager App (Vanilla JS + LocalStorage)",
+        text: "✅ Управляйте своими задачами, сохраняйте и редактируйте их.💾 Данные сохраняются локально в браузере."
       },
       {
-        title: "Responsive Portfolio",
-        text: "Современное адаптивное портфолио, показывающее навыки и проекты 💼"
+        title: "Weather Dashboard (API Integration)",
+        text: "☀️ Отображает прогноз погоды через OpenWeather API.📍 Есть поиск города и автоматическое определение местоположения."
+      },
+      {
+        title: "Logo Design Collection",
+        text: "🎨 Галерея оригинальных логотипов (Figma / Illustrator).💼 Разные стили — минимализм, 3D и современный дизайн."
+      },
+      {
+        title: "UI/UX Design System",
+        text: "📱 Прототип дизайн-системы, созданный в Figma.💡 Включает компоненты, цветовую палитру и типографику."
+      },
+      {
+        title: "Full-Stack Platform",
+        text: "⚙️ Приложение на Node.js, Express.js и MongoDB.🧾 Авторизация, CRUD-функции и комментарии."
+      },
+      {
+        title: "E-Commerce Storefront",
+        text: "🛒 Каталог товаров, корзина и система заказов.💳 Интерактивный Checkout UI и реальная API-интеграция."
+      },
+      {
+        title: "Landing Page",
+        text: "🚀 Современный лендинг с анимациями и call-to-action элементами.🎯 SEO-оптимизация и высокая скорость загрузки."
       }
     ],
     contactTitle: "Связаться со мной",
@@ -217,3 +281,4 @@ floatBtn.addEventListener('click', () => {
 closeFloatCard.addEventListener('click', () => {
   floatCard.style.display = 'none';
 });
+
