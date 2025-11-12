@@ -161,7 +161,7 @@ const translations = {
         title: "Landing Page",
         text:
           "🚀 Modern landing page with animations and call-to-action elements.🎯 SEO optimized and lightning-fast loading speed."
-      }
+      },
     ],
     contactTitle: "Get in Touch",
     contactName: "Your Name",
@@ -234,7 +234,7 @@ const translations = {
     formSuccessText:
       "Спасибо за обращение! Я скоро свяжусь с вами 💬",
     footer: "© 2025 luchi.dev | Веб-разработчик, создающий впечатляющие проекты 🚀"
-  }
+  },
 };
 
 
@@ -302,5 +302,6 @@ document.addEventListener('click', (event) => {
     floatCard.style.display = 'none';
   }
 });
+
 
 
