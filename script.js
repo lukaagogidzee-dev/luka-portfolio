@@ -47,58 +47,53 @@ contactForm.addEventListener("submit", async e => {
   }
 });
 
+// === Translations ===
+// === Translations ===
 const translations = {
   ka: {
-    about: "ჩემს შესახებ",
     projects: "პროექტები",
     contact: "კონტაქტი",
     skills: "ენები და ტექნოლოგიები",
     heroTitle: "გამარჯობა, მე ვარ <span>luchi</span> 👋",
     heroText:
       "Front-end დეველოპერი და UI/UX დიზაინერი. მიყვარს თანამედროვე, დინამიკური და მომხმარებელზე ორიენტირებული ინტერფეისების შექმნა. ვცდილობ ყოველი პროექტი იყოს გამართული, ფუნქციური და ესთეტიკურად დახვეწილი 💡",
-    aboutText:
-      "მე ვარ ვებდეველოპერი, რომელიც სპეციალიზდება Front-end ტექნოლოგიებში და ქმნის თანამედროვე, მომხმარებელზე ორიენტირებულ ვებინტერფეისებს. ასევე ვმუშაობ პროექტების ფუნქციურ მხარეზეც — დიზაინიდან კოდამდე, ერთი მთლიანობის პრინციპით.",
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
       {
         title: "Portfolio Website (Responsive Design)",
-        text:
-          "👉 სრულად რეზპონსიული ვებსაიტი შენს შესახებ. აწყობილია HTML, CSS, JS-ზე 🌙 დამატებულია dark/light რეჟიმი.🖌️ UI/UX დიზაინი სრულად შენ მიერ შექმნილი."
+        text: "👉 სრულად რეზპონსიული ვებსაიტი შენს შესახებ. აწყობილია HTML, CSS, JS-ზე 🌙 დამატებულია dark/light რეჟიმი.🖌️ UI/UX დიზაინი სრულად შენ მიერ შექმნილი."
       },
       {
         title: "Task Manager App (Vanilla JS + LocalStorage)",
-        text:
-          "✅ ამოცანების მენეჯმენტი, შენახვა და რედაქტირება.💾 მონაცემები ინახება ბრაუზერის მეხსიერებაში."
+        text: "✅ ამოცანების მენეჯმენტი, შენახვა და რედაქტირება.💾 მონაცემები ინახება ბრაუზერის მეხსიერებაში."
       },
       {
         title: "Weather Dashboard (API Integration)",
-        text:
-          "☀️ აჩვენებს ამინდის პროგნოზს OpenWeather API-დან.📍 მოიცავს ქალაქის ძებნის ფუნქციას და ავტომატურ ლოკაციას."
+        text: "☀️ აჩვენებს ამინდის პროგნოზს OpenWeather API-დან.📍 მოიცავს ქალაქის ძებნის ფუნქციას და ავტომატურ ლოკაციას."
       },
       {
         title: "Logo Design Collection",
-        text:
-          "🎨 შექმნილი ბრენდული ლოგოების გალერეა (Figma / Illustrator).💼 სხვადასხვა სტილი — მინიმალისტური, 3D, მოდერნი."
+        text: "🎨 შექმნილი ბრენდული ლოგოების გალერეა (Figma / Illustrator).💼 სხვადასხვა სტილი — მინიმალისტური, 3D, მოდერნი."
       },
       {
         title: "UI/UX Design System",
-        text:
-          "📱 დიზაინის სისტემის პროტოტიპი (Figma-ში შექმნილი).💡 მოიცავს კომპონენტებს, ფერთა პალიტრას და ტიპოგრაფიას."
+        text: "📱 დიზაინის სისტემის პროტოტიპი (Figma-ში შექმნილი).💡 მოიცავს კომპონენტებს, ფერთა პალიტრას და ტიპოგრაფიას."
       },
       {
         title: "Full-Stack Platform",
-        text:
-          "⚙️ Node.js + Express.js + MongoDB აპლიკაცია.🧾 ავტორიზაცია, CRUD ფუნქციები, კომენტარები."
+        text: "⚙️ Node.js + Express.js + MongoDB აპლიკაცია.🧾 ავტორიზაცია, CRUD ფუნქციები, კომენტარები"
+      },
+      {
+        title: "Task Manager App",
+        text: "მარტივი, მაგრამ ეფექტური აპლიკაცია სამუშაოების სამართავად. აშენებულია Vanilla JS და LocalStorage-ზე."
       },
       {
         title: "E-Commerce Storefront",
-        text:
-          "🛒 პროდუქციის კატალოგი, კალათა და შეკვეთის სისტემა.💳 ინტერაქტიული Checkout UI და რეალური API ინტეგრაცია."
+        text: "🛒 პროდუქციის კატალოგი, კალათა და შეკვეთის სისტემა.💳 ინტერაქტიული Checkout UI და რეალური API ინტეგრაცია."
       },
       {
         title: "Landing Page",
-        text:
-          "🚀 მოდერნული ლენდინგი ანიმაციებითა და call-to-action ელემენტებით.🎯 SEO-ოპტიმიზაცია და სწრაფი ჩატვირთვა."
+        text: "🚀 მოდერნული ლენდინგი ანიმაციებითა და call-to-action ელემენტებით.🎯 SEO-ოპტიმიზაცია და სწრაფი ჩატვირთვა."
       }
     ],
     contactTitle: "დამიკავშირდი",
@@ -108,60 +103,50 @@ const translations = {
     contactSend: "გაგზავნა",
     formSuccessTitle: "შეტყობინება წარმატებით გაიგზავნა 🚀",
     formSuccessText: "გმადლობ, რომ დამიკავშირდი. მალე გიპასუხებ 💬",
-    footer: "© 2025 luchi.dev | ვებდეველოპერი, რომელიც ქმნის შთამბეჭდავ გამოცდილებას 🚀"
+    footer: "© 2025 luchi.dev🚀"
   },
   en: {
-    about: "About Me",
     projects: "Projects",
     contact: "Contact",
     skills: "Languages & Technologies",
     heroTitle: "Hi, I'm <span>luchi</span> 👋",
     heroText:
-      "Front-end Developer and UI/UX Designer. I love crafting modern, stylish, and user-friendly interfaces where every detail enhances the experience. My goal is to make each project seamless, functional, and visually engaging 💡",
-    aboutText:
-      "I’m a Web Developer specializing in Front-end technologies. I create modern, user-focused web interfaces and also work on the functional side of projects — from design to code, following a unified and cohesive approach.",
+      "Front-end Developer and UI/UX Designer. I love creating modern, dynamic, and user-centered interfaces. I aim for every project to be well-crafted, functional, and aesthetically refined 💡",
+    contactBtn: "Contact Me",
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
       {
         title: "Portfolio Website (Responsive Design)",
-        text:
-          "👉 Fully responsive personal website built with HTML, CSS, and JS.🌙 Includes dark/light mode.🖌️ UI/UX design fully created by you."
+        text: "👉 Fully responsive personal website built with HTML, CSS, and JS.🌙 Includes dark/light mode.🖌️ UI/UX design fully created by you."
       },
       {
         title: "Task Manager App (Vanilla JS + LocalStorage)",
-        text:
-          "✅ Manage, save, and edit your daily tasks.💾 Data is stored locally in the browser."
+        text: "✅ Manage, save, and edit your daily tasks.💾 Data is stored locally in the browser."
       },
       {
         title: "Weather Dashboard (API Integration)",
-        text:
-          "☀️ Displays live weather data from OpenWeather API.📍 Includes city search and automatic location detection."
+        text: "☀️ Displays live weather data from OpenWeather API.📍 Includes city search and automatic location detection."
       },
       {
         title: "Logo Design Collection",
-        text:
-          "🎨 Gallery of original logo designs (Figma / Illustrator).💼 Various styles — minimalist, 3D, and modern."
+        text: "🎨 Gallery of original logo designs (Figma / Illustrator).💼 Various styles — minimalist, 3D, and modern."
       },
       {
         title: "UI/UX Design System",
-        text:
-          "📱 Prototype of a design system created in Figma.💡 Includes components, color palette, and typography setup."
+        text: "📱 Prototype of a design system created in Figma.💡 Includes components, color palette, and typography setup."
       },
       {
         title: "Full-Stack Platform",
-        text:
-          "⚙️ Built with Node.js, Express.js, and MongoDB.🧾 Features authentication, CRUD operations, and comments."
+        text: "⚙️ Built with Node.js, Express.js, and MongoDB.🧾 Features authentication, CRUD operations, and comments."
       },
       {
         title: "E-Commerce Storefront",
-        text:
-          "🛒 Product catalog, shopping cart, and order system.💳 Interactive checkout UI with real API integration."
+        text: "🛒 Product catalog, shopping cart, and order system.💳 Interactive checkout UI with real API integration."
       },
       {
         title: "Landing Page",
-        text:
-          "🚀 Modern landing page with animations and call-to-action elements.🎯 SEO optimized and lightning-fast loading speed."
-      },
+        text: "🚀 Modern landing page with animations and call-to-action elements.🎯 SEO optimized and lightning-fast loading speed."
+      }
     ],
     contactTitle: "Get in Touch",
     contactName: "Your Name",
@@ -170,59 +155,49 @@ const translations = {
     contactSend: "Send",
     formSuccessTitle: "Message Sent Successfully 🚀",
     formSuccessText: "Thanks for reaching out! I’ll get back to you soon 💬",
-    footer: "© 2025 luchi.dev | Web developer crafting stunning experiences 🚀"
+    footer: "© 2025 luchi.dev🚀"
   },
   ru: {
-    about: "Обо мне",
     projects: "Проекты",
     contact: "Контакты",
     skills: "Языки и технологии",
     heroTitle: "Привет, я <span>luchi</span> 👋",
     heroText:
-      "Front-end разработчик и UI/UX дизайнер. Люблю создавать современные, стильные и удобные интерфейсы, где каждая деталь работает на комфорт пользователя. Моя цель — чтобы каждый проект был гармоничным, функциональным и визуально выразительным 💡",
-    aboutText:
-      "Я — веб-разработчик, специализирующийся на Front-end технологиях. Создаю современные и ориентированные на пользователя веб-интерфейсы. Также работаю над функциональной частью проектов — от дизайна до кода, придерживаясь принципа цельности и гармонии.",
+      "Front-end разработчик и UI/UX дизайнер. Мне нравится создавать современные, динамичные и ориентированные на пользователя интерфейсы. Стремлюсь к тому, чтобы каждый проект был продуманным, функциональным и эстетически совершенным 💡",
+    contactBtn: "Связаться со мной",
     skillsList: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
     projectsList: [
-      {
+     {
         title: "Portfolio Website (Responsive Design)",
-        text:
-          "👉 Полностью адаптивный персональный сайт, созданный с использованием HTML, CSS и JS.🌙 Включает тёмный и светлый режимы.🖌️ UI/UX дизайн полностью выполнен вами."
+        text: "👉 Полностью адаптивный персональный сайт, созданный с использованием HTML, CSS и JS.🌙 Включает тёмный и светлый режимы.🖌️ UI/UX дизайн полностью выполнен вами."
       },
       {
         title: "Task Manager App (Vanilla JS + LocalStorage)",
-        text:
-          "✅ Управляйте своими задачами, сохраняйте и редактируйте их.💾 Данные сохраняются локально в браузере."
+        text: "✅ Управляйте своими задачами, сохраняйте и редактируйте их.💾 Данные сохраняются локально в браузере."
       },
       {
         title: "Weather Dashboard (API Integration)",
-        text:
-          "☀️ Отображает прогноз погоды через OpenWeather API.📍 Есть поиск города и автоматическое определение местоположения."
+        text: "☀️ Отображает прогноз погоды через OpenWeather API.📍 Есть поиск города и автоматическое определение местоположения."
       },
       {
         title: "Logo Design Collection",
-        text:
-          "🎨 Галерея оригинальных логотипов (Figma / Illustrator).💼 Разные стили — минимализм, 3D и современный дизайн."
+        text: "🎨 Галерея оригинальных логотипов (Figma / Illustrator).💼 Разные стили — минимализм, 3D и современный дизайн."
       },
       {
         title: "UI/UX Design System",
-        text:
-          "📱 Прототип дизайн-системы, созданный в Figma.💡 Включает компоненты, цветовую палитру и типографику."
+        text: "📱 Прототип дизайн-системы, созданный в Figma.💡 Включает компоненты, цветовую палитру и типографику."
       },
       {
         title: "Full-Stack Platform",
-        text:
-          "⚙️ Приложение на Node.js, Express.js и MongoDB.🧾 Авторизация, CRUD-функции и комментарии."
+        text: "⚙️ Приложение на Node.js, Express.js и MongoDB.🧾 Авторизация, CRUD-функции и комментарии."
       },
       {
         title: "E-Commerce Storefront",
-        text:
-          "🛒 Каталог товаров, корзина и система заказов.💳 Интерактивный Checkout UI и реальная API-интеграция."
+        text: "🛒 Каталог товаров, корзина и система заказов.💳 Интерактивный Checkout UI и реальная API-интеграция."
       },
       {
         title: "Landing Page",
-        text:
-          "🚀 Современный лендинг с анимациями и call-to-action элементами.🎯 SEO-оптимизация და высокая скорость загрузки."
+        text: "🚀 Современный лендинг с анимациями и call-to-action элементами.🎯 SEO-оптимизация и высокая скорость загрузки."
       }
     ],
     contactTitle: "Связаться со мной",
@@ -231,12 +206,10 @@ const translations = {
     contactMsg: "Сообщение...",
     contactSend: "Отправить",
     formSuccessTitle: "Сообщение успешно отправлено 🚀",
-    formSuccessText:
-      "Спасибо за обращение! Я скоро свяжусь с вами 💬",
-    footer: "© 2025 luchi.dev | Веб-разработчик, создающий впечатляющие проекты 🚀"
-  },
+    formSuccessText: "Спасибо за обращение! Я скоро свяжусь с вами 💬",
+    footer: "© 2025 luchi.dev🚀"
+  }
 };
-
 
 const langButtons = document.querySelectorAll(".lang-switcher img");
 
@@ -252,14 +225,14 @@ langButtons.forEach(btn => {
 function changeLanguage(lang) {
   const t = translations[lang];
 
-  document.querySelector('a[href="#about"]').textContent = t.about;
+  
   document.querySelector('a[href="#projects"]').textContent = t.projects;
   document.querySelector('a[href="#contact"]').textContent = t.contact;
 
   document.querySelector("#hero h2").innerHTML = t.heroTitle;
   document.querySelector("#hero p").textContent = t.heroText;
-  document.querySelector("#about h2").textContent = t.about;
-  document.querySelector("#about p").textContent = t.aboutText;
+ 
+  
   document.querySelector("#skills h2").textContent = t.skills;
 
   const projectCards = document.querySelectorAll(".project-card");
@@ -302,6 +275,3 @@ document.addEventListener('click', (event) => {
     floatCard.style.display = 'none';
   }
 });
-
-
-
